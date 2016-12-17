@@ -1,0 +1,839 @@
+@charset "UTF-8";
+/* CSS Document */
+@font-face {
+  font-family: "Didot W01 Roman";
+  src: url("/_fonts/ca8dded6-b7b2-4d3c-b45e-a32de5023d4d.woff2") format("woff2"), url("/_fonts/8cf278e2-5b07-4c21-97da-4762c9ea76c1.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Didot W01 Italic";
+  src: url("/_fonts/abe3d3a9-c990-459f-9407-54ac96cd2f00.woff2") format("woff2"), url("/_fonts/09a4b57b-7400-4d30-b4ba-d6e303c57868.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Minion W01 Regular";
+  src: url("/_fonts/18597b82-9a06-46a3-b68b-c250c1105515.woff2") format("woff2"), url("/_fonts/62100580-a2d1-4d98-bb14-d4c4c3f1a5ba.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Minion W01 SmBd";
+  src: url("/_fonts/526fcf4d-1490-47a5-bb91-6c046f776e22.woff2") format("woff2"), url("/_fonts/684d90d7-12e2-46fc-8776-cfa0c9bffeff.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Proxima N W01 Reg";
+  src: url("/_fonts/64017d81-9430-4cba-8219-8f5cc28b923e.woff2") format("woff2"), url("/_fonts/e56ecb6d-da41-4bd9-982d-2d295bec9ab0.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Proxima N W01 Smbd";
+  src: url("/_fonts/ae47a7f5-89da-4879-b934-29722c3dd451.woff2") format("woff2"), url("/_fonts/70ae52ec-d89b-4c6a-9402-854ebe423c54.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  background: #343434;
+  line-height: 1;
+  position: relative; }
+
+body {
+  font-size: 100%;
+  font-family: "Minion W01 Regular", "Times New Roman", Times, serif;
+  min-width: 480px;
+  color: #343434; }
+
+ol, ul {
+  list-style: none;
+  margin-bottom: 20px; }
+  ol li, ul li {
+    font: 1em/1.4em "Minion W01 Regular", "Times New Roman", Times, serif; }
+    ol li b, ol li strong, ul li b, ul li strong {
+      font-family: "Minion W01 SmBd", "Times New Roman", Times, serif; }
+    ol li i, ol li em, ul li i, ul li em {
+      font-style: italic; }
+    ol li a, ul li a {
+      color: #a2772c; }
+
+a {
+  text-decoration: none;
+  border: none;
+  outline: none;
+  color: inherit;
+  cursor: pointer; }
+  a:hover, a:active, a.select {
+    color: #7a7a7a; }
+    a:hover img, a:active img, a.select img {
+      opacity: 0.65; }
+  a img {
+    border: none; }
+
+p {
+  font: 1em/1.4em "Minion W01 Regular", "Times New Roman", Times, serif;
+  margin-bottom: 20px; }
+  p b, p strong {
+    font-family: "Minion W01 SmBd", "Times New Roman", Times, serif; }
+  p i, p em {
+    font-style: italic; }
+  p a {
+    color: #a2772c; }
+
+address {
+  font: 10px/18px "Proxima N W01 Reg", Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: none;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+  address b, address strong {
+    font-family: "Minion W01 SmBd", "Times New Roman", Times, serif; }
+  address i, address em {
+    font-style: italic; }
+  address a {
+    color: #a2772c; }
+
+img {
+  display: block;
+  width: 100%; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+h1 {
+  font: 5.9em/1.2em "Didot W01 Roman", "Times New Roman", Times, serif;
+  font-weight: normal;
+  margin: -0.2em 0 0.2em; }
+
+h2 {
+  font: 2.25em/1em "Didot W01 Roman", "Times New Roman", Times, serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+h3 {
+  font: 1.9em/1.2em "Didot W01 Roman", "Times New Roman", Times, serif;
+  font-weight: normal; }
+
+h4 {
+  font: 1.13em/1.33em "Proxima N W01 Smbd", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  text-transform: uppercase; }
+
+h5 {
+  font: 16px/22px "Proxima N W01 Smbd", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  text-transform: uppercase; }
+
+h6 {
+  font: 0.76em/1.57em "Proxima N W01 Smbd", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  -webkit-text-size-adjust: none; }
+
+/*
+input {
+	height: 20px;
+	font: 16px/20px $futuraLightFS;
+	letter-spacing: 1px;
+	padding: 10px 12px;
+	border-radius: 0;
+	background-color: $greyLight;
+	color: $black;
+}
+*/
+blockquote {
+  padding: 30px 30px 0;
+  position: relative; }
+  blockquote p {
+    font: 0.69em/1.65em "Proxima N W01 Smbd", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    -webkit-text-size-adjust: none;
+    position: relative; }
+    blockquote p:before {
+      content: "”";
+      font-size: 8em;
+      font-family: "Didot W01 Roman", "Times New Roman", Times, serif;
+      line-height: 1em;
+      position: absolute;
+      top: -46px;
+      right: -2px; }
+
+sup {
+  vertical-align: super;
+  font-size: xx-small; }
+
+sub {
+  vertical-align: sub;
+  font-size: xx-small; }
+
+/*
+::-webkit-input-placeholder {
+	color: $hoverColor;
+	opacity: 1;
+}
+:-moz-placeholder {
+	color: $hoverColor;
+	opacity: 1;
+}
+::-moz-placeholder {
+	color: $hoverColor;
+	opacity: 1;
+}
+:-ms-input-placeholder {
+	color: $hoverColor;
+	opacity: 1;
+}
+*/
+/*
+#log {
+	position: absolute;
+	z-index: 2000;
+	color: white;
+	top: 30px;
+	left: 30px;
+	font-size: 36px;
+}
+*/
+/* start classes */
+.hide {
+  display: none; }
+
+.closeX {
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 40px;
+  top: -14px;
+  right: 26px;
+  z-index: 100;
+  cursor: pointer; }
+  .closeX:after, .closeX:before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top: 20px; }
+  .closeX:after {
+    right: 5px;
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  .closeX:before {
+    left: 5px;
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+  .closeX:hover:after, .closeX:hover:before, .closeX:active:after, .closeX:active:before {
+    background-color: #d2b583; }
+
+.button {
+  display: inline-block;
+  min-width: 200px;
+  height: 56px;
+  padding: 0 20px;
+  letter-spacing: 2px;
+  color: white;
+  text-align: center;
+  border: solid 1px #d2b583;
+  background-color: rgba(0, 0, 0, 0.14);
+  font: 22px/56px "Didot W01 Italic", "Times New Roman", Times, serif;
+  cursor: pointer;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out; }
+  .button:hover, .button:active {
+    color: #7a7a7a;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out; }
+
+/*
+.buttonSmall {
+	display: inline-block;
+	height: 20px;
+	min-width: 110px;
+	font: 12px/20px $futuraBookFS;
+	letter-spacing: 2px;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 5px 10px;
+	@include background-image(linear-gradient($red, $redLight));
+	cursor: pointer;
+	&:hover, &:active {
+		@include background-image(linear-gradient($hoverColor, $hoverColor));
+	}
+}
+*/
+/*
+.error {
+	color: $redLight !important;
+}
+*/
+.newsletter {
+  display: inline-block;
+  min-width: 0;
+  height: auto;
+  margin-top: 20px;
+  padding: 0 12px;
+  border: solid 1px white;
+  font: 10px/32px "Proxima N W01 Reg", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white; }
+  .newsletter:hover, .newsletter:active {
+    background-color: white;
+    color: #343434; }
+
+/* end classes */
+#newsTopBar {
+  display: none;
+  text-align: right;
+  padding: 8px 0;
+  background-color: black; }
+  #newsTopBar div {
+    max-width: 1160px;
+    padding: 0 30px;
+    margin: auto; }
+    #newsTopBar div h6 {
+      display: inline-block;
+      vertical-align: middle;
+      text-transform: none;
+      font-size: 0.8em;
+      font-family: "Didot W01 Italic", "Times New Roman", Times, serif;
+      color: white;
+      margin-right: 20px; }
+    #newsTopBar div .newsletter {
+      margin-top: 0; }
+
+#mainContent {
+  padding: 0 30px;
+  max-width: 1220px;
+  margin: auto; }
+  #mainContent header {
+    padding: 36px 0 32px; }
+    #mainContent header #logo {
+      width: 180px;
+      height: 108px;
+      background: url(/_images/logo.png) no-repeat center center; }
+      #mainContent header #logo a {
+        display: block;
+        height: 100%; }
+        #mainContent header #logo a span {
+          display: none; }
+    #mainContent header #menu {
+      float: right;
+      width: 32px;
+      height: 21px;
+      cursor: pointer;
+      position: relative; }
+      #mainContent header #menu:before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 15px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-top: solid 3px white;
+        border-bottom: solid 3px white; }
+      #mainContent header #menu:after {
+        content: "";
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 9px;
+        left: 0;
+        border-top: solid 3px white; }
+      #mainContent header #menu:hover:before, #mainContent header #menu:hover:after, #mainContent header #menu:active:before, #mainContent header #menu:active:after {
+        border-color: #d2b583; }
+    #mainContent header #navContent {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: rgba(52, 52, 52, 0.98);
+      z-index: 1000;
+      padding: 40px 0; }
+      #mainContent header #navContent nav {
+        max-width: 1280px;
+        margin: auto;
+        text-align: center;
+        position: relative; }
+        #mainContent header #navContent nav .main li a {
+          font: 22px/44px "Proxima N W01 Smbd", Helvetica, Arial, sans-serif;
+          color: white;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          display: block; }
+          #mainContent header #navContent nav .main li a#inquire {
+            display: block;
+            width: 178px;
+            height: 44px;
+            border: solid 1px white;
+            margin: 30px auto; }
+          #mainContent header #navContent nav .main li a.nav-on {
+            color: #7a7a7a; }
+          #mainContent header #navContent nav .main li a:hover, #mainContent header #navContent nav .main li a:active {
+            color: #d2b583; }
+        #mainContent header #navContent nav .second {
+          position: relative; }
+          #mainContent header #navContent nav .second:after {
+            content: "";
+            position: absolute;
+            width: 34px;
+            height: 2px;
+            margin-left: -17px;
+            background-color: #7a7a7a;
+            left: 50%;
+            bottom: -20px; }
+          #mainContent header #navContent nav .second li a {
+            font: 17px/35px "Proxima N W01 Reg", Helvetica, Arial, sans-serif;
+            color: white;
+            letter-spacing: 1px;
+            display: block; }
+            #mainContent header #navContent nav .second li a:hover, #mainContent header #navContent nav .second li a:active {
+              color: #d2b583; }
+          #mainContent header #navContent nav .second li ul {
+            display: none;
+            margin-bottom: 0; }
+            #mainContent header #navContent nav .second li ul li a {
+              color: #7a7a7a; }
+          #mainContent header #navContent nav .second + .second {
+            margin: 40px 0 20px 0; }
+            #mainContent header #navContent nav .second + .second:after {
+              display: none; }
+        #mainContent header #navContent nav #navLogo {
+          width: 142px;
+          height: 85px;
+          margin: 0 auto 20px;
+          background: url(/_images/logo_sm.png) no-repeat center center; }
+          #mainContent header #navContent nav #navLogo a {
+            display: block;
+            height: 100%; }
+        #mainContent header #navContent nav .social {
+          font-size: 0;
+          line-height: 0;
+          text-align: center;
+          margin-bottom: 12px; }
+          #mainContent header #navContent nav .social a {
+            width: 22px;
+            height: 22px;
+            display: inline-block;
+            border: solid 1px white;
+            border-radius: 20px;
+            margin: 0 10px;
+            padding: 6px;
+            background-image: url(/_images/social.png);
+            background-repeat: no-repeat;
+            background-clip: content-box; }
+            #mainContent header #navContent nav .social a:hover, #mainContent header #navContent nav .social a:active {
+              opacity: 0.65; }
+            #mainContent header #navContent nav .social a.instagram {
+              background-position: 8px; }
+            #mainContent header #navContent nav .social a.twitter {
+              background-position: -13px;
+              padding-left: 7px;
+              padding-right: 4px;
+              width: 23px; }
+            #mainContent header #navContent nav .social a.facebook {
+              background-position: -33px; }
+        #mainContent header #navContent nav #navLogin, #mainContent header #navContent nav #navPhone {
+          font: 18px/46px "Proxima N W01 Smbd", Helvetica, Arial, sans-serif;
+          color: white;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          display: block; }
+          #mainContent header #navContent nav #navLogin:hover, #mainContent header #navContent nav #navLogin:active, #mainContent header #navContent nav #navPhone:hover, #mainContent header #navContent nav #navPhone:active {
+            color: #d2b583; }
+  #mainContent #content {
+    background-color: white;
+    padding: 20px; }
+  #mainContent footer {
+    padding: 70px 0 80px;
+    text-align: center; }
+    #mainContent footer #loginFooter {
+      display: inline-block;
+      margin-top: -30px;
+      margin-bottom: 30px;
+      width: 20px;
+      height: 18px;
+      border: 1px solid #d2b583;
+      cursor: pointer;
+      -moz-transform: rotate(59deg) skew(28deg);
+      -ms-transform: rotate(59deg) skew(28deg);
+      -webkit-transform: rotate(59deg) skew(28deg);
+      transform: rotate(59deg) skew(28deg);
+      -moz-transition-property: all;
+      -o-transition-property: all;
+      -webkit-transition-property: all;
+      transition-property: all;
+      -moz-transition-duration: 0.4s;
+      -o-transition-duration: 0.4s;
+      -webkit-transition-duration: 0.4s;
+      transition-duration: 0.4s;
+      -moz-transition-timing-function: ease-out;
+      -o-transition-timing-function: ease-out;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out; }
+      #mainContent footer #loginFooter:hover, #mainContent footer #loginFooter:active {
+        background-color: #d2b583; }
+    #mainContent footer #logoFooter {
+      height: 85px;
+      margin-bottom: 20px;
+      background: url(/_images/logo_sm.png) no-repeat center center; }
+    #mainContent footer address {
+      padding-top: 18px;
+      border-top: solid 1px white;
+      color: white;
+      display: inline-block; }
+    #mainContent footer p {
+      font: 10px/18px "Proxima N W01 Reg", Helvetica, Arial, sans-serif;
+      -webkit-text-size-adjust: none;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: white; }
+      #mainContent footer p a {
+        color: white; }
+        #mainContent footer p a:hover, #mainContent footer p a:active {
+          color: #d2b583; }
+    #mainContent footer span {
+      display: block;
+      width: 48px;
+      height: 3px;
+      margin: 0 auto 20px;
+      background-color: white; }
+    #mainContent footer .social {
+      font-size: 0;
+      line-height: 0;
+      text-align: center; }
+      #mainContent footer .social a {
+        width: 22px;
+        height: 22px;
+        display: inline-block;
+        border: solid 1px white;
+        border-radius: 20px;
+        margin: 0 6px;
+        padding: 6px;
+        background-image: url(/_images/social.png);
+        background-repeat: no-repeat;
+        background-clip: content-box; }
+        #mainContent footer .social a:hover, #mainContent footer .social a:active {
+          opacity: 0.65; }
+        #mainContent footer .social a.instagram {
+          background-position: 8px; }
+        #mainContent footer .social a.twitter {
+          background-position: -13px;
+          padding-left: 7px;
+          padding-right: 4px;
+          width: 23px; }
+        #mainContent footer .social a.facebook {
+          background-position: -33px; }
+
+#modalNews {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(52, 52, 52, 0.75);
+  z-index: 200000; }
+  #modalNews.prodMod {
+    background-color: #343434; }
+
+#newsletterSignup, #footerLogin, #prodInq {
+  display: none;
+  background-color: #343434;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 440px;
+  margin-top: -189px;
+  margin-left: -240px;
+  margin-right: -2px;
+  border: 1px solid #d2b583;
+  -moz-box-shadow: rgba(52, 52, 52, 0.65) 0 0 26px 2px;
+  -webkit-box-shadow: rgba(52, 52, 52, 0.65) 0 0 26px 2px;
+  box-shadow: rgba(52, 52, 52, 0.65) 0 0 26px 2px;
+  z-index: 200100; }
+  #newsletterSignup h3, #footerLogin h3, #prodInq h3 {
+    font-size: 1.8em;
+    margin: 0 auto 20px;
+    max-width: 360px; }
+  #newsletterSignup h4, #footerLogin h4, #prodInq h4 {
+    font-size: 1.03em;
+    margin: 0 auto 20px;
+    max-width: 360px; }
+  #newsletterSignup .checkboxes, #footerLogin .checkboxes, #prodInq .checkboxes {
+    margin: 10px auto 10px;
+    display: -ms-flexbox;
+    -ms-flex-direction: row;
+    -ms-flex-wrap: wrap;
+    -ms-justify-content: center;
+    -ms-flex-pack: center;
+    -ms-align-items: flex-start;
+    -ms-flex-align: start;
+    -ms-align-content: flex-start;
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -webkit-align-items: flex-start;
+    -webkit-align-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start; }
+    #newsletterSignup .checkboxes > label, #footerLogin .checkboxes > label, #prodInq .checkboxes > label {
+      width: 100%; }
+    #newsletterSignup .checkboxes > div, #footerLogin .checkboxes > div, #prodInq .checkboxes > div {
+      width: 30%;
+      display: -ms-inline-flexbox;
+      -ms-flex-direction: column;
+      -ms-flex-wrap: wrap;
+      -ms-justify-content: flex-start;
+      -ms-flex-pack: start;
+      -ms-align-items: flex-start;
+      -ms-flex-align: start;
+      -ms-align-content: flex-start;
+      display: -webkit-flex;
+      -webkit-flex-direction: column;
+      -webkit-flex-wrap: wrap;
+      -webkit-justify-content: flex-start;
+      -webkit-align-items: flex-start;
+      -webkit-align-content: flex-start;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      align-content: flex-start;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+  #newsletterSignup .errorStatus.error, #footerLogin .errorStatus.error, #prodInq .errorStatus.error {
+    color: #d2b583; }
+  #newsletterSignup ::-webkit-input-placeholder, #footerLogin ::-webkit-input-placeholder, #prodInq ::-webkit-input-placeholder {
+    color: #6b6b6b;
+    opacity: 1; }
+  #newsletterSignup :-moz-placeholder, #footerLogin :-moz-placeholder, #prodInq :-moz-placeholder {
+    color: #6b6b6b;
+    opacity: 1; }
+  #newsletterSignup ::-moz-placeholder, #footerLogin ::-moz-placeholder, #prodInq ::-moz-placeholder {
+    color: #6b6b6b;
+    opacity: 1; }
+  #newsletterSignup :-ms-input-placeholder, #footerLogin :-ms-input-placeholder, #prodInq :-ms-input-placeholder {
+    color: #6b6b6b;
+    opacity: 1; }
+  #newsletterSignup label, #footerLogin label, #prodInq label {
+    display: block;
+    font: 24px/32px "Didot W01 Roman", "Times New Roman", Times, serif;
+    margin: 2px 0 10px; }
+  #newsletterSignup input[type="text"], #newsletterSignup input[type="email"], #newsletterSignup input[type="password"], #newsletterSignup input[type="tel"], #footerLogin input[type="text"], #footerLogin input[type="email"], #footerLogin input[type="password"], #footerLogin input[type="tel"], #prodInq input[type="text"], #prodInq input[type="email"], #prodInq input[type="password"], #prodInq input[type="tel"] {
+    display: block;
+    width: 340px;
+    font: 30px/30px "Didot W01 Roman", "Times New Roman", Times, serif;
+    border-bottom: solid 1px #d2b583;
+    border-radius: 0;
+    padding-bottom: 6px;
+    margin: 0 auto 30px;
+    text-align: center;
+    color: white;
+    background-color: transparent; }
+  #newsletterSignup input[type="radio"], #newsletterSignup input[type="checkbox"], #footerLogin input[type="radio"], #footerLogin input[type="checkbox"], #prodInq input[type="radio"], #prodInq input[type="checkbox"] {
+    display: none; }
+    #newsletterSignup input[type="radio"] + label, #newsletterSignup input[type="checkbox"] + label, #footerLogin input[type="radio"] + label, #footerLogin input[type="checkbox"] + label, #prodInq input[type="radio"] + label, #prodInq input[type="checkbox"] + label {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 18px;
+      line-height: 20px;
+      margin: 10px 0 18px 0; }
+      #newsletterSignup input[type="radio"] + label:before, #newsletterSignup input[type="checkbox"] + label:before, #footerLogin input[type="radio"] + label:before, #footerLogin input[type="checkbox"] + label:before, #prodInq input[type="radio"] + label:before, #prodInq input[type="checkbox"] + label:before {
+        content: "";
+        display: inline-block;
+        vertical-align: top;
+        width: 20px;
+        height: 20px;
+        border: solid 1px #d2b583;
+        margin-right: 12px; }
+    #newsletterSignup input[type="radio"]:checked + label:before, #newsletterSignup input[type="checkbox"]:checked + label:before, #footerLogin input[type="radio"]:checked + label:before, #footerLogin input[type="checkbox"]:checked + label:before, #prodInq input[type="radio"]:checked + label:before, #prodInq input[type="checkbox"]:checked + label:before {
+      background-color: #d2b583; }
+  #newsletterSignup input[type=submit], #footerLogin input[type=submit], #prodInq input[type=submit] {
+    display: inline-block;
+    min-width: 200px;
+    height: 44px;
+    padding: 0 20px;
+    letter-spacing: 1px;
+    color: white;
+    text-align: center;
+    border: solid 1px #d2b583;
+    background-color: rgba(0, 0, 0, 0.14);
+    font: 22px/42px "Didot W01 Italic", "Times New Roman", Times, serif;
+    text-transform: lowercase;
+    cursor: pointer;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out; }
+    #newsletterSignup input[type=submit]:hover, #newsletterSignup input[type=submit]:active, #footerLogin input[type=submit]:hover, #footerLogin input[type=submit]:active, #prodInq input[type=submit]:hover, #prodInq input[type=submit]:active {
+      color: #7a7a7a;
+      -moz-transition-property: all;
+      -o-transition-property: all;
+      -webkit-transition-property: all;
+      transition-property: all;
+      -moz-transition-duration: 0.4s;
+      -o-transition-duration: 0.4s;
+      -webkit-transition-duration: 0.4s;
+      transition-duration: 0.4s;
+      -moz-transition-timing-function: ease-in-out;
+      -o-transition-timing-function: ease-in-out;
+      -webkit-transition-timing-function: ease-in-out;
+      transition-timing-function: ease-in-out; }
+  #newsletterSignup textarea, #footerLogin textarea, #prodInq textarea {
+    display: block;
+    width: 314px;
+    max-width: 314px;
+    font: 26px/26px "Didot W01 Roman", "Times New Roman", Times, serif;
+    border: solid 1px #d2b583;
+    border-radius: 0;
+    padding: 6px 12px;
+    margin: 0 auto 30px;
+    text-align: left;
+    color: white;
+    background-color: transparent; }
+  #newsletterSignup #loading, #footerLogin #loading, #prodInq #loading {
+    width: 200px;
+    height: 44px;
+    display: inline-block;
+    background: url(/_images/loading.gif) no-repeat center; }
+  #newsletterSignup #newsClose, #newsletterSignup #loginClose, #newsletterSignup #prodInqClose, #footerLogin #newsClose, #footerLogin #loginClose, #footerLogin #prodInqClose, #prodInq #newsClose, #prodInq #loginClose, #prodInq #prodInqClose {
+    top: 12px;
+    right: 12px; }
+
+#prodInq {
+  background-color: transparent;
+  color: #6b6b6b;
+  padding: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 550px;
+  margin: -351px 0  0 -275px;
+  border: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+  #prodInq h3 {
+    margin-top: -34px;
+    margin-bottom: 5px; }
+  #prodInq input[type="text"], #prodInq input[type="email"], #prodInq input[type="password"], #prodInq input[type="tel"] {
+    display: inline-block;
+    width: 518px;
+    font: 18px/22px "Didot W01 Roman", "Times New Roman", Times, serif;
+    color: #7a7a7a;
+    margin: 0 5px 20px;
+    padding: 9px;
+    border: solid 1px #d2b583; }
+    #prodInq input[type="text"].half, #prodInq input[type="email"].half, #prodInq input[type="password"].half, #prodInq input[type="tel"].half {
+      width: 243px; }
+    #prodInq input[type="text"].third, #prodInq input[type="email"].third, #prodInq input[type="password"].third, #prodInq input[type="tel"].third {
+      width: 150px; }
+  #prodInq textarea {
+    width: 518px;
+    max-width: 518px;
+    font: 18px/22px "Didot W01 Roman", "Times New Roman", Times, serif;
+    margin: 0 5px 20px;
+    padding: 9px; }
+  #prodInq button[type=submit] {
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    padding: 0; }
+  #prodInq #prodInqClose {
+    top: 0;
+    right: 0; }
+
+@media (max-width: 685px) {
+  #mainContent {
+    padding: 0; }
+    #mainContent header {
+      padding-left: 20px !important;
+      padding-right: 20px !important; }
+
+  #newsletterSignup .checkboxes > div, #footerLogin .checkboxes > div, #prodInq .checkboxes > div {
+    width: 38%; }
+    #newsletterSignup .checkboxes > div:nth-child(2), #footerLogin .checkboxes > div:nth-child(2), #prodInq .checkboxes > div:nth-child(2) {
+      padding-left: 4%; }
+
+  #prodInq {
+    width: 440px;
+    margin-left: -220px; }
+    #prodInq input[type="text"], #prodInq input[type="email"], #prodInq input[type="password"] {
+      width: 408px; }
+      #prodInq input[type="text"].half, #prodInq input[type="email"].half, #prodInq input[type="password"].half {
+        width: 188px; }
+      #prodInq input[type="text"].third, #prodInq input[type="email"].third, #prodInq input[type="password"].third {
+        width: 114px; }
+    #prodInq textarea {
+      width: 408px;
+      max-width: 408px; } }
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  #mainContent header .social a, #mainContent footer .social a {
+    /* Reference the @2x Sprite */
+    background-image: url(/_images/social@2x.png) !important;
+    /* Translate the @2x sprite's dimensions back to 1x */
+    background-size: 60px 20px !important; }
+  #mainContent header #logo {
+    /* Reference the @2x Sprite */
+    background-image: url(/_images/logo@2x.png);
+    /* Translate the @2x sprite's dimensions back to 1x */
+    background-size: 180px 108px; }
+  #mainContent header #navContent nav #navLogo, #mainContent footer #logoFooter {
+    /* Reference the @2x Sprite */
+    background-image: url(/_images/logo_sm@2x.png);
+    /* Translate the @2x sprite's dimensions back to 1x */
+    background-size: 142px 85px; } }

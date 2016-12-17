@@ -1,0 +1,148 @@
+#mainContent {
+  padding: 0 30px;
+  max-width: 1220px;
+  margin: auto; }
+    #mainContent #content {
+    background-color: white;
+    padding: 20px; }
+  #mainContent footer {
+    padding: 70px 0 80px;
+    text-align: center; }
+    #mainContent footer #loginFooter {
+      display: inline-block;
+      margin-top: -30px;
+      margin-bottom: 30px;
+      width: 20px;
+      height: 18px;
+      border: 1px solid #d2b583;
+      cursor: pointer;
+      -moz-transform: rotate(59deg) skew(28deg);
+      -ms-transform: rotate(59deg) skew(28deg);
+      -webkit-transform: rotate(59deg) skew(28deg);
+      transform: rotate(59deg) skew(28deg);
+      -moz-transition-property: all;
+      -o-transition-property: all;
+      -webkit-transition-property: all;
+      transition-property: all;
+      -moz-transition-duration: 0.4s;
+      -o-transition-duration: 0.4s;
+      -webkit-transition-duration: 0.4s;
+      transition-duration: 0.4s;
+      -moz-transition-timing-function: ease-out;
+      -o-transition-timing-function: ease-out;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out; }
+      #mainContent footer #loginFooter:hover, #mainContent footer #loginFooter:active {
+        background-color: #d2b583; }
+    #mainContent footer #logoFooter {
+      height: 85px;
+      margin-bottom: 20px;
+      background: url(/_images/logo_sm.png) no-repeat center center; }
+    #mainContent footer address {
+      padding-top: 18px;
+      border-top: solid 1px white;
+      color: white;
+      display: inline-block; }
+    #mainContent footer p {
+      font: 10px/18px "Proxima N W01 Reg", Helvetica, Arial, sans-serif;
+      -webkit-text-size-adjust: none;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: white; }
+      #mainContent footer p a {
+        color: white; }
+        #mainContent footer p a:hover, #mainContent footer p a:active {
+          color: #d2b583; }
+    #mainContent footer span {
+      display: block;
+      width: 48px;
+      height: 3px;
+      margin: 0 auto 20px;
+      background-color: white; }
+    #mainContent footer .social {
+      font-size: 0;
+      line-height: 0;
+      text-align: center; }
+      #mainContent footer .social a {
+        width: 22px;
+        height: 22px;
+        display: inline-block;
+        border: solid 1px white;
+        border-radius: 20px;
+        margin: 0 6px;
+        padding: 6px;
+        background-image: url(/_images/social.png);
+        background-repeat: no-repeat;
+        background-clip: content-box; }
+        #mainContent footer .social a:hover, #mainContent footer .social a:active {
+          opacity: 0.65; }
+        #mainContent footer .social a.instagram {
+          background-position: 8px; }
+        #mainContent footer .social a.twitter {
+          background-position: -13px;
+          padding-left: 7px;
+          padding-right: 4px;
+          width: 23px; }
+        #mainContent footer .social a.facebook {
+          background-position: -33px; }
+
+
+#prodInq {
+  background-color: transparent;
+  color: #6b6b6b;
+  padding: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 550px;
+  margin: -351px 0  0 -275px;
+  border: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+  #prodInq h3 {
+    margin-top: -34px;
+    margin-bottom: 5px; }
+  #prodInq input[type="text"], #prodInq input[type="email"], #prodInq input[type="password"], #prodInq input[type="tel"] {
+    display: inline-block;
+    width: 518px;
+    font: 18px/22px "Didot W01 Roman", "Times New Roman", Times, serif;
+    color: #7a7a7a;
+    margin: 0 5px 20px;
+    padding: 9px;
+    border: solid 1px #d2b583; }
+    #prodInq input[type="text"].half, #prodInq input[type="email"].half, #prodInq input[type="password"].half, #prodInq input[type="tel"].half {
+      width: 243px; }
+    #prodInq input[type="text"].third, #prodInq input[type="email"].third, #prodInq input[type="password"].third, #prodInq input[type="tel"].third {
+      width: 150px; }
+  #prodInq textarea {
+    width: 518px;
+    max-width: 518px;
+    font: 18px/22px "Didot W01 Roman", "Times New Roman", Times, serif;
+    margin: 0 5px 20px;
+    padding: 9px; }
+  #prodInq button[type=submit] {
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    padding: 0; }
+  #prodInq #prodInqClose {
+    top: 0;
+    right: 0; }
+
+@media (max-width: 685px) {
+  #mainContent {
+    padding: 0; }
+
+  #prodInq {
+    width: 440px;
+    margin-left: -220px; }
+    #prodInq input[type="text"], #prodInq input[type="email"], #prodInq input[type="password"] {
+      width: 408px; }
+      #prodInq input[type="text"].half, #prodInq input[type="email"].half, #prodInq input[type="password"].half {
+        width: 188px; }
+      #prodInq input[type="text"].third, #prodInq input[type="email"].third, #prodInq input[type="password"].third {
+        width: 114px; }
+    #prodInq textarea {
+      width: 408px;
+      max-width: 408px; } }

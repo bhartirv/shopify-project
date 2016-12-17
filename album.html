@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://www.christianothstudio.com/products -->
+<html class="mdl-js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="description" content="">
+<meta name="keywords" content="">
+
+<meta charset="UTF-8">
+<meta id="viewport" name="viewport" content="width=device-width,initial-scale=0.78">
+<title>Products | Christian Oth Studio</title>
+
+<link rel="stylesheet" href="css/global.css" type="text/css">
+<link rel="stylesheet" href="css/products.css" type="text/css">
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/TweenMax.min.js"></script>
+<script type="text/javascript" src="js/turn.js"></script>
+<script type="text/javascript" src="js/jquery.address-1.6.min.js"></script>
+<script type="text/javascript" src="js/wait.js"></script>
+<script type="text/javascript" src="js/onload.js"></script>
+
+<script type="text/javascript">
+if ($(window).width() > 480) $('#viewport').attr('content', 'width=device-width,initial-scale=0.78');
+
+$(document).ready(function(){
+	
+
+	function flipBook() {
+		var pageLen = ($('#fb5-book .turn-page-wrapper').length - 2) / 2;
+		//console.log(pageLen);
+		var flips = pageLen;
+		var rev = false;
+		setInterval(function() {
+			if (flips > 1 && !rev) {
+				$('.fb5-nav-arrow.next').click();
+				flips = flips - 1;
+			} else {
+				$('.fb5-nav-arrow.prev').click();
+				flips = flips + 1;
+				rev = (flips == pageLen) ? false : true;
+			}
+		}, 4000)
+	}
+	
+	$('#fb5-container-book *').on('touchstart touchmove touchend mousedown mousemove mouseup', function(e) {
+		return false;
+	})
+	
+	$(window).on('load', function() {
+		$('#fb5-container-book').css('padding', '1.4% 2% 2.1%');
+		//$('.fb5-nav-arrow.next').click();
+		$(window).resize();
+		flipBook();
+	})
+	
+});
+</script>
+</head>
+
+<body>
+	
+	<div id="mainContent">
+
+		
+		<div id="content">
+			<section>
+
+				<div id="designServ">
+					<div id="fb5-ajax">   
+			      <div data-current="book5" class="fb5" id="fb5">
+	            <div id="fb5-container-book">
+                <div id="fb5-book">
+	                <div data-background-image="http://www.christianothstudio.com/_images/designserv_end.png">&nbsp;</div>
+	                
+						
+						<div data-background-image="http://www.christianothstudio.com/images/made/_images/products/book_pg1_2_1078_734auto_c1.png" class="fb5-double fb5-first">&nbsp;</div>
+						<div data-background-image="http://www.christianothstudio.com/images/made/_images/products/book_pg1_2_1078_734auto_c1.png" class="fb5-double fb5-second">&nbsp;</div>
+						
+	                
+						
+						<div data-background-image="http://www.christianothstudio.com/images/made/_images/products/book_pg3_4_1078_734auto_c1.png" class="fb5-double fb5-first">&nbsp;</div>
+						<div data-background-image="http://www.christianothstudio.com/images/made/_images/products/book_pg3_4_1078_734auto_c1.png" class="fb5-double fb5-second">&nbsp;</div>
+						
+	                
+						
+						<div data-background-image="http://www.christianothstudio.com/images/made/_images/products/Page-Flip-02_1078_734auto_c1.png" class="fb5-double fb5-first">&nbsp;</div>
+						<div data-background-image="http://www.christianothstudio.com/images/made/_images/products/Page-Flip-02_1078_734auto_c1.png" class="fb5-double fb5-second">&nbsp;</div>
+						
+	                
+						
+						<div data-background-image="http://www.christianothstudio.com/images/made/_images/products/Page-Flip-01_1078_734auto_c1.png" class="fb5-double fb5-first">&nbsp;</div>
+						<div data-background-image="http://www.christianothstudio.com/images/made/_images/products/Page-Flip-01_1078_734auto_c1.png" class="fb5-double fb5-second">&nbsp;</div>
+						
+	                
+	                <div data-background-image="http://www.christianothstudio.com/_images/designserv_start.png">&nbsp;</div>
+	              </div>
+              <a class="fb5-nav-arrow prev button">prev</a>
+              <a class="fb5-nav-arrow next button">next</a>
+             </div>
+			        <div id="fb5-footer">
+		            <a id="fb5-logo" target="_blank" href="http://codecanyon.net/user/flashmaniac?ref=flashmaniac"></a>
+		            <div class="fb5-menu" id="fb5-center"></div>
+		            <div class="fb5-menu" id="fb5-right"></div>
+			        </div>    
+						</div>
+					</div>
+					
+				</div>
+
+
+			</section>
+		</div>
+	</div>
+	<script>
+    jQuery('#fb5').data('config', {
+	    "page_width":"539",
+	    "page_height":"734",
+	    "double_click_enabled":"false",
+	    "tooltip_visible":"false",
+	   "toolbar_visible":"false",
+	   "deeplinking_enabled":"false",
+	   "rtl":"false",
+	    'full_area':'false',
+			'lazy_loading_thumbs':'false',
+			'lazy_loading_pages':'false'
+    })
+	</script>
+
+
+
+
+</body></html>

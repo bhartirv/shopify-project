@@ -1,0 +1,951 @@
+/* CSS Document */
+.flexslider {
+  width: 100%;
+  overflow: hidden;
+  position: relative; }
+  .flexslider .slides {
+    margin-bottom: 0; }
+    .flexslider .slides:after {
+      content: "\0020";
+      display: block;
+      clear: both;
+      visibility: hidden;
+      line-height: 0;
+      height: 0; }
+    html[xmlns] .flexslider .slides {
+      display: block; }
+    * html .flexslider .slides {
+      height: 1%; }
+
+#mainContent {
+  max-width: none;
+  padding: 0;
+  overflow: hidden; }
+  #mainContent header {
+    padding: 20px 30px;
+    background-color: #343434; }
+    #mainContent header #logo {
+      width: 95px;
+      height: 58px;
+      background-image: url(/_images/logo_smaller.png); }
+  #mainContent #content {
+    padding: 0;
+    background-color: #eaeaea;
+    overflow: hidden;
+    position: relative; }
+    #mainContent #content #backToProd {
+      width: 46px;
+      height: 36px;
+      padding-right: 20px;
+      font: 18px/36px "Didot W01 Italic", "Times New Roman", Times, serif;
+      cursor: pointer;
+      position: absolute;
+      top: 20px;
+      left: 30px; }
+    #mainContent #content.albums {
+      background-repeat: no-repeat;
+      background-position: center top;
+      -moz-background-size: contain;
+      -o-background-size: contain;
+      -webkit-background-size: contain;
+      background-size: contain;
+      /*
+      			.prod {
+      				@include flex-box($direction: row, $wrap: wrap, $justify: flex-start, $pack: start, $align-items: flex-start, $align-content: flex-start);
+      				padding-bottom: 110px;
+      				&:nth-child(2n+1) {
+      					@include flexbox((
+      						flex-direction: row-reverse,
+      					), $version: 2);
+      					@include flexbox((
+      						flex-direction: row-reverse,
+      					));
+      					text-align: right;
+      					p {
+      						padding-right: 0;
+      						padding-left: 20px;
+      						margin-left: auto;
+      					}
+      				}
+      				div {
+      					display: inline-block;
+      					vertical-align: top;
+      					width: 50%;
+      					padding: 0;
+      					margin: 10px 0;
+      					h2 {
+      						margin-bottom: 20px;
+      					}
+      					p {
+      						max-width: 540px;
+      						margin: 0;
+      						padding-right: 20px;
+      					}
+      					h6 {
+      						margin: 5% 0 18px;
+      						padding: 15px 0;
+      						border-bottom: 1px solid $gold;
+      					}
+      					h5 {
+      						font: 18px/1.4em $didotFS;
+      						text-transform: none;
+      					}
+      				}
+      				.flexslider {
+      					width: 65%;
+      					padding: 0;
+      					margin: 0;
+      				}
+      			}
+      */ }
+      #mainContent #content.albums .serv .flexslider .slides {
+        width: 100%; }
+      #mainContent #content.albums .serv div:first-child {
+        width: 50%; }
+      #mainContent #content.albums .serv div:last-child {
+        width: 50%; }
+    #mainContent #content h2 {
+      font-size: 36px;
+      margin-bottom: 10px; }
+    #mainContent #content h4 {
+      font-size: 1.5em;
+      margin-bottom: 12px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; }
+    #mainContent #content p {
+      font-size: 16px;
+      max-width: 625px;
+      margin-left: auto;
+      margin-right: auto; }
+    #mainContent #content .button {
+      font: 12px/38px "Proxima N W01 Smbd", Helvetica, Arial, sans-serif;
+      min-width: 130px;
+      height: 38px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      background-color: transparent;
+      border: 1px solid #343434;
+      color: #343434; }
+      #mainContent #content .button:hover, #mainContent #content .button:active {
+        color: white;
+        background-color: #343434; }
+    #mainContent #content #albums {
+      padding: 200px 0 130px;
+      text-align: center; }
+      #mainContent #content #albums h2 {
+        font-size: 57px;
+        margin-bottom: 26px; }
+    #mainContent #content #design {
+      padding: 130px 20px;
+      text-align: center; }
+      #mainContent #content #design h2 {
+        font-size: 57px;
+        margin-bottom: 26px; }
+    #mainContent #content .serv {
+      display: -ms-flexbox;
+      -ms-flex-direction: row;
+      -ms-flex-wrap: nowrap;
+      -ms-justify-content: flex-start;
+      -ms-flex-pack: start;
+      -ms-align-items: stretch;
+      -ms-flex-align: stretch;
+      -ms-align-content: stretch;
+      display: -webkit-flex;
+      -webkit-flex-direction: row;
+      -webkit-flex-wrap: nowrap;
+      -webkit-justify-content: flex-start;
+      -webkit-align-items: stretch;
+      -webkit-align-content: stretch;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: stretch;
+      align-content: stretch;
+      padding-bottom: 130px; }
+      #mainContent #content .serv div {
+        display: -ms-inline-flexbox;
+        -ms-flex-wrap: wrap;
+        -ms-justify-content: flex-start;
+        -ms-flex-pack: start;
+        -ms-align-items: center;
+        -ms-flex-align: center;
+        -ms-align-content: center;
+        display: -webkit-flex;
+        -webkit-flex-wrap: wrap;
+        -webkit-justify-content: flex-start;
+        -webkit-align-items: center;
+        -webkit-align-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center; }
+        #mainContent #content .serv div:first-child {
+          width: 32.5%; }
+        #mainContent #content .serv div:last-child {
+          width: 67.5%; }
+        #mainContent #content .serv div h2, #mainContent #content .serv div h4 {
+          width: 100%;
+          margin-left: 0;
+          padding-right: 20px;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+        #mainContent #content .serv div h6 {
+          width: 100%;
+          margin: 0 0 18px;
+          padding: 15px 0;
+          border-bottom: 1px solid #d2b583; }
+        #mainContent #content .serv div h5 {
+          width: 100%;
+          font: 18px/1.4em "Didot W01 Roman", "Times New Roman", Times, serif;
+          text-transform: none;
+          margin-bottom: 30px; }
+        #mainContent #content .serv div p {
+          max-width: 540px;
+          margin-left: 0;
+          padding-right: 20px; }
+      #mainContent #content .serv:nth-child(2n+1) {
+        -ms-flex-direction: row-reverse;
+        -webkit-flex-direction: row-reverse;
+        flex-direction: row-reverse; }
+        #mainContent #content .serv:nth-child(2n+1) div {
+          text-align: right; }
+          #mainContent #content .serv:nth-child(2n+1) div h2, #mainContent #content .serv:nth-child(2n+1) div h4, #mainContent #content .serv:nth-child(2n+1) div p {
+            margin-left: auto;
+            margin-right: 0;
+            padding-right: 0;
+            padding-left: 20px; }
+    #mainContent #content #congrats {
+      text-align: center;
+      padding: 0 20px 160px; }
+      #mainContent #content #congrats h4 {
+        margin-bottom: 30px; }
+    #mainContent #content section {
+      padding: 80px 7%; }
+      #mainContent #content section .photo.port {
+        max-width: 372px; }
+      #mainContent #content section .photo.land {
+        max-width: 559px; }
+      #mainContent #content section .photo img.picBord {
+        padding: 15px;
+        background-color: white;
+        -moz-box-shadow: rgba(52, 52, 52, 0.2) 0 4px 10px 0;
+        -webkit-box-shadow: rgba(52, 52, 52, 0.2) 0 4px 10px 0;
+        box-shadow: rgba(52, 52, 52, 0.2) 0 4px 10px 0;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box; }
+      #mainContent #content section #prints {
+        padding: 200px 0 470px;
+        text-align: center; }
+        #mainContent #content section #prints p {
+          position: relative;
+          z-index: 10; }
+        #mainContent #content section #prints h2 {
+          font-size: 57px;
+          margin-bottom: 26px;
+          position: relative;
+          z-index: 10; }
+        #mainContent #content section #prints #photoPrints {
+          position: relative; }
+          #mainContent #content section #prints #photoPrints .photo {
+            position: absolute; }
+            #mainContent #content section #prints #photoPrints .photo:nth-child(1) {
+              top: -660px;
+              left: 44%;
+              -moz-transform: rotate(6deg);
+              -ms-transform: rotate(6deg);
+              -webkit-transform: rotate(6deg);
+              transform: rotate(6deg); }
+            #mainContent #content section #prints #photoPrints .photo:nth-child(2) {
+              top: -140px;
+              left: 85%;
+              right: -300px;
+              -moz-transform: rotate(16deg);
+              -ms-transform: rotate(16deg);
+              -webkit-transform: rotate(16deg);
+              transform: rotate(16deg); }
+            #mainContent #content section #prints #photoPrints .photo:nth-child(3) {
+              top: 140px;
+              right: 53%;
+              left: 40px;
+              -moz-transform: rotate(-7deg);
+              -ms-transform: rotate(-7deg);
+              -webkit-transform: rotate(-7deg);
+              transform: rotate(-7deg); }
+            #mainContent #content section #prints #photoPrints .photo:nth-child(4) {
+              top: -440px;
+              right: 80%;
+              left: -210px;
+              -moz-transform: rotate(-10deg);
+              -ms-transform: rotate(-10deg);
+              -webkit-transform: rotate(-10deg);
+              transform: rotate(-10deg); }
+            #mainContent #content section #prints #photoPrints .photo:nth-child(5) {
+              top: -400px;
+              left: 84%;
+              right: -260px;
+              -moz-transform: rotate(-17deg);
+              -ms-transform: rotate(-17deg);
+              -webkit-transform: rotate(-17deg);
+              transform: rotate(-17deg); }
+            #mainContent #content section #prints #photoPrints .photo:nth-child(6) {
+              top: 30px;
+              right: 80%;
+              left: -200px;
+              -moz-transform: rotate(5deg);
+              -ms-transform: rotate(5deg);
+              -webkit-transform: rotate(5deg);
+              transform: rotate(5deg); }
+      #mainContent #content section #archivalPrints {
+        text-align: center;
+        margin: 130px 0 60px;
+        /*
+        				#archPrints {
+        					display: inline-block;
+        					position: relative;
+        					margin: 112px 0;
+        					width: 1120px;
+        					max-width: 100%;
+        					.photo {
+        						position: absolute;
+        						img {
+        							padding: 20px;
+        						}
+        						&.land {
+        							max-width: 840px;
+        						}
+        						&:nth-child(1) {
+        							position: relative;
+        							left: 6%;
+        							margin-right: 23%;
+        						}
+        						&:nth-child(2) {
+        							top: 0;
+        							right: 19%;
+        							left: 6%;
+        							@include transform(rotate(-8deg));
+        						}
+        						&:nth-child(3) {
+        							top: 30px;
+        							left: 21%;
+        							right: 4%;
+        							@include transform(rotate(8deg));
+        						}
+        					}
+        				}
+        */ }
+        #mainContent #content section #archivalPrints h6 {
+          margin-bottom: 46px; }
+        #mainContent #content section #archivalPrints h4 {
+          font-size: 1.1em;
+          margin-top: 16px; }
+      #mainContent #content section #labPrints {
+        text-align: center;
+        padding: 60px 0 50px;
+        position: relative; }
+        #mainContent #content section #labPrints:before {
+          content: "";
+          width: 360px;
+          height: 1px;
+          background-color: #d2b583;
+          position: absolute;
+          top: 0;
+          left: 50%;
+          margin-left: -180px; }
+        #mainContent #content section #labPrints h4 {
+          font-size: 1.1em;
+          margin-top: 36px; }
+        #mainContent #content section #labPrints div {
+          margin-bottom: 50px; }
+          #mainContent #content section #labPrints div p {
+            display: none; }
+            #mainContent #content section #labPrints div p:first-child {
+              display: block; }
+      #mainContent #content section #prodIntro {
+        display: -ms-flexbox;
+        -ms-flex-direction: row;
+        -ms-flex-wrap: nowrap;
+        -ms-justify-content: center;
+        -ms-flex-pack: center;
+        -ms-align-items: center;
+        -ms-flex-align: center;
+        -ms-align-content: center;
+        display: -webkit-flex;
+        -webkit-flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+        -webkit-justify-content: center;
+        -webkit-align-items: center;
+        -webkit-align-content: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center; }
+        #mainContent #content section #prodIntro > div {
+          display: inline-block;
+          vertical-align: middle;
+          width: 50%; }
+          #mainContent #content section #prodIntro > div:first-child {
+            text-align: left;
+            position: relative;
+            z-index: 100; }
+          #mainContent #content section #prodIntro > div:last-child {
+            text-align: center;
+            max-width: 740px;
+            -moz-transform: rotate(-14deg);
+            -ms-transform: rotate(-14deg);
+            -webkit-transform: rotate(-14deg);
+            transform: rotate(-14deg); }
+          #mainContent #content section #prodIntro > div > div {
+            display: inline-block;
+            text-align: left; }
+            #mainContent #content section #prodIntro > div > div.text {
+              padding: 0 20% 0 7%; }
+            #mainContent #content section #prodIntro > div > div.photo {
+              position: relative;
+              margin: 0 auto;
+              /*
+              							&.land {
+              								margin-top: -372px;
+              							}
+              */
+              							/*
+              &.rotate1 {
+              								@include transform(rotate(6deg));
+              							}
+              							&.rotate2 {
+              								@include transform(rotate(12deg));
+              							}
+              							&.rotate3 {
+              								@include transform(rotate(18deg));
+              							}
+              							&.rotate4 {
+              								@include transform(rotate(24deg));
+              							}
+              */ }
+              #mainContent #content section #prodIntro > div > div.photo.port {
+                margin-top: -532px; }
+              #mainContent #content section #prodIntro > div > div.photo.holder {
+                margin-top: 0;
+                top: 0; }
+              #mainContent #content section #prodIntro > div > div.photo:nth-child(2) {
+                top: -16px;
+                -moz-transform: rotate(8deg);
+                -ms-transform: rotate(8deg);
+                -webkit-transform: rotate(8deg);
+                transform: rotate(8deg);
+                								/*
+                &.land {
+                									top: -95px;
+                								}
+                */ }
+              #mainContent #content section #prodIntro > div > div.photo:nth-child(3) {
+                top: -32px;
+                -moz-transform: rotate(16deg);
+                -ms-transform: rotate(16deg);
+                -webkit-transform: rotate(16deg);
+                transform: rotate(16deg);
+                								/*
+                &.land {
+                									top: -111px;
+                								}
+                */ }
+              #mainContent #content section #prodIntro > div > div.photo:nth-child(4) {
+                top: -48px;
+                -moz-transform: rotate(24deg);
+                -ms-transform: rotate(24deg);
+                -webkit-transform: rotate(24deg);
+                transform: rotate(24deg);
+                								/*
+                &.land {
+                									top: -127px;
+                								}
+                */ }
+              #mainContent #content section #prodIntro > div > div.photo:nth-child(5) {
+                top: -64px;
+                -moz-transform: rotate(32deg);
+                -ms-transform: rotate(32deg);
+                -webkit-transform: rotate(32deg);
+                transform: rotate(32deg);
+                								/*
+                &.land {
+                									top: -143px;
+                								}
+                */ }
+            #mainContent #content section #prodIntro > div > div h6 {
+              font-size: 12px;
+              margin-bottom: 24px; }
+              #mainContent #content section #prodIntro > div > div h6:after {
+                content: "";
+                display: block;
+                height: 6px;
+                width: 46%;
+                margin-top: 24px;
+                margin-bottom: 24px;
+                background-color: #343434; }
+      #mainContent #content section #prod {
+        padding: 180px 0;
+        display: -ms-flexbox;
+        -ms-flex-direction: row;
+        -ms-flex-wrap: wrap;
+        -ms-justify-content: center;
+        -ms-flex-pack: center;
+        -ms-align-items: stretch;
+        -ms-flex-align: stretch;
+        -ms-align-content: flex-start;
+        display: -webkit-flex;
+        -webkit-flex-direction: row;
+        -webkit-flex-wrap: wrap;
+        -webkit-justify-content: center;
+        -webkit-align-items: stretch;
+        -webkit-align-content: flex-start;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        align-content: flex-start; }
+        #mainContent #content section #prod > div {
+          display: inline-block;
+          vertical-align: middle;
+          text-align: center;
+          /*
+          					&:first-child {
+          						width: 25.33%;
+          						padding: 2% 4%;
+          						img {
+          							max-width: 275px;
+          						}
+          					}
+          					&:nth-child(2) {
+          						width: 31.33%;
+          						padding: 2% 1%;
+          						img {
+          							max-width: 344px;
+          						}
+          					}
+          					&:nth-child(3) {
+          						width: 27.33%;
+          						padding: 2% 3%;
+          						img {
+          							max-width: 291px;
+          						}
+          					}
+          */ }
+          #mainContent #content section #prod > div.photo {
+            opacity: 0;
+            display: -ms-inline-flexbox;
+            -ms-flex-wrap: nowrap;
+            -ms-justify-content: center;
+            -ms-flex-pack: center;
+            -ms-align-items: center;
+            -ms-flex-align: center;
+            -ms-align-content: center;
+            display: -webkit-inline-flex;
+            -webkit-flex-wrap: nowrap;
+            -webkit-justify-content: center;
+            -webkit-align-items: center;
+            -webkit-align-content: center;
+            display: inline-flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            width: 31.33%;
+            padding: 2% 1%; }
+            #mainContent #content section #prod > div.photo img {
+              width: auto;
+              max-width: 100%; }
+            #mainContent #content section #prod > div.photo .text {
+              display: none;
+              padding-top: 12px; }
+          #mainContent #content section #prod > div.text {
+            width: 27.33%;
+            padding: 2% 3%; }
+          #mainContent #content section #prod > div img {
+            display: inline-block; }
+      #mainContent #content section #designServ {
+        text-align: center;
+        				/*
+        img {
+        					width: auto;
+        					max-width: 100%;
+        					display: inline-block;
+        					margin-bottom: 60px;
+        				}
+        */ }
+        #mainContent #content section #designServ #fb5-ajax {
+          margin: 0 -7%; }
+          #mainContent #content section #designServ #fb5-ajax #fb5 {
+            display: block;
+            position: relative;
+            margin: 0 auto;
+            width: 100%;
+            height: auto !important;
+            margin-bottom: 64px;
+            opacity: 0; }
+            #mainContent #content section #designServ #fb5-ajax #fb5 #fb5-container-book {
+              display: none;
+              position: relative;
+              top: 0 !important;
+              left: 0 !important;
+              margin: 0 auto;
+              z-index: 5;
+              background: url(/_images/designservBG.png) no-repeat center;
+              -moz-background-size: contain;
+              -o-background-size: contain;
+              -webkit-background-size: contain;
+              background-size: contain; }
+              #mainContent #content section #designServ #fb5-ajax #fb5 #fb5-container-book #fb5-book {
+                position: relative;
+                z-index: 10; }
+                #mainContent #content section #designServ #fb5-ajax #fb5 #fb5-container-book #fb5-book .turn-page {
+                  -moz-background-size: 100% 100%;
+                  -o-background-size: 100% 100%;
+                  -webkit-background-size: 100% 100%;
+                  background-size: 100% 100%; }
+                #mainContent #content section #designServ #fb5-ajax #fb5 #fb5-container-book #fb5-book .turn-page-wrapper > div div {
+                  -moz-background-size: 100% 100%;
+                  -o-background-size: 100% 100%;
+                  -webkit-background-size: 100% 100%;
+                  background-size: 100% 100%; }
+                #mainContent #content section #designServ #fb5-ajax #fb5 #fb5-container-book #fb5-book .fb5-double {
+                  background-size: 200% 100% !important; }
+                  #mainContent #content section #designServ #fb5-ajax #fb5 #fb5-container-book #fb5-book .fb5-double.fb5-first {
+                    background-position: 0% 0%; }
+                  #mainContent #content section #designServ #fb5-ajax #fb5 #fb5-container-book #fb5-book .fb5-double.fb5-second {
+                    background-position: -100% 0%; }
+              #mainContent #content section #designServ #fb5-ajax #fb5 #fb5-container-book .fb5-nav-arrow {
+                display: none !important;
+                min-width: 0;
+                border: none;
+                position: absolute;
+                bottom: -25px;
+                padding: 0; }
+                #mainContent #content section #designServ #fb5-ajax #fb5 #fb5-container-book .fb5-nav-arrow:hover, #mainContent #content section #designServ #fb5-ajax #fb5 #fb5-container-book .fb5-nav-arrow:active {
+                  color: #6b6b6b;
+                  background-color: transparent; }
+                #mainContent #content section #designServ #fb5-ajax #fb5 #fb5-container-book .fb5-nav-arrow.prev {
+                  left: 0; }
+                  #mainContent #content section #designServ #fb5-ajax #fb5 #fb5-container-book .fb5-nav-arrow.prev:before {
+                    content: "\25c0";
+                    margin: 0 10px;
+                    display: inline-block; }
+                #mainContent #content section #designServ #fb5-ajax #fb5 #fb5-container-book .fb5-nav-arrow.next {
+                  right: 0; }
+                  #mainContent #content section #designServ #fb5-ajax #fb5 #fb5-container-book .fb5-nav-arrow.next:after {
+                    content: "\25c0";
+                    margin: 0 10px;
+                    display: inline-block;
+                    -moz-transform: rotate(180deg);
+                    -ms-transform: rotate(180deg);
+                    -webkit-transform: rotate(180deg);
+                    transform: rotate(180deg); }
+            #mainContent #content section #designServ #fb5-ajax #fb5 .fb5-bcg-book {
+              background: none no-repeat center center;
+              background-size: cover;
+              -moz-background-size: cover;
+              -webkit-background-size: cover;
+              width: 100%;
+              height: 100%; }
+      #mainContent #content section #frames {
+        display: -ms-flexbox;
+        -ms-flex-direction: row;
+        -ms-flex-wrap: nowrap;
+        -ms-justify-content: flex-start;
+        -ms-flex-pack: start;
+        -ms-align-items: stretch;
+        -ms-flex-align: stretch;
+        -ms-align-content: stretch;
+        display: -webkit-flex;
+        -webkit-flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+        -webkit-justify-content: flex-start;
+        -webkit-align-items: stretch;
+        -webkit-align-content: stretch;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: stretch;
+        padding: 30px 0 0; }
+        #mainContent #content section #frames > div {
+          width: 50%;
+          display: -ms-inline-flexbox;
+          -ms-flex-wrap: wrap;
+          -ms-justify-content: flex-start;
+          -ms-flex-pack: start;
+          -ms-align-items: center;
+          -ms-flex-align: center;
+          -ms-align-content: center;
+          display: -webkit-inline-flex;
+          -webkit-flex-wrap: wrap;
+          -webkit-justify-content: flex-start;
+          -webkit-align-items: center;
+          -webkit-align-content: center;
+          display: inline-flex;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          align-items: center;
+          align-content: center;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+          #mainContent #content section #frames > div:first-child {
+            padding-right: 40px; }
+          #mainContent #content section #frames > div .portLrgLrg {
+            padding: 10.1% 11.3%;
+            background-image: url(/_images/frameLand_lrglrg.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            -webkit-background-size: cover;
+            background-size: cover;
+            -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 4px 8px 0;
+            -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 4px 8px 0;
+            box-shadow: rgba(0, 0, 0, 0.2) 0 4px 8px 0; }
+          #mainContent #content section #frames > div h2 {
+            font-size: 57px;
+            margin-bottom: 26px;
+            width: 100%; }
+          #mainContent #content section #frames > div p {
+            margin-left: 0;
+            max-width: none;
+            width: 100%; }
+      #mainContent #content section #wallFrames {
+        text-align: center;
+        margin-top: 110px;
+        position: relative; }
+        #mainContent #content section #wallFrames #wall {
+          width: 2990px;
+          margin: 0 -8.2% 35px;
+          overflow: hidden;
+          position: relative;
+          left: 0; }
+          #mainContent #content section #wallFrames #wall .flexslider {
+            float: left;
+            margin: 0.7em;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            -webkit-background-size: cover;
+            background-size: cover;
+            -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 4px 8px 0;
+            -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 4px 8px 0;
+            box-shadow: rgba(0, 0, 0, 0.2) 0 4px 8px 0; }
+          #mainContent #content section #wallFrames #wall .portLrg {
+            max-width: 277px;
+            padding: 3.1em 3.2em;
+            background-image: url(/_images/framePort_lrg.jpg);
+            background-repeat: no-repeat;
+            background-position: center; }
+          #mainContent #content section #wallFrames #wall .landLrg {
+            max-width: 323px;
+            padding: 3.1em 3.05em;
+            background-image: url(/_images/frameLand_lrg.jpg);
+            background-repeat: no-repeat;
+            background-position: center; }
+          #mainContent #content section #wallFrames #wall .portSm {
+            max-width: 182px;
+            padding: 1.85em 1.88em;
+            background-image: url(/_images/framePort_sm.jpg);
+            background-repeat: no-repeat;
+            background-position: center; }
+          #mainContent #content section #wallFrames #wall .landSm {
+            max-width: 214px;
+            padding: 1.82em 1.82em;
+            background-image: url(/_images/frameLand_sm.jpg);
+            background-repeat: no-repeat;
+            background-position: center; }
+          #mainContent #content section #wallFrames #wall .bottom {
+            clear: left; }
+        #mainContent #content section #wallFrames #wallDirection {
+          width: 116%;
+          height: 645px;
+          margin: 0 -8%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          font-size: 0;
+          line-height: 0;
+          z-index: 100; }
+          #mainContent #content section #wallFrames #wallDirection div {
+            display: inline-block;
+            width: 50%;
+            height: 100%; }
+            #mainContent #content section #wallFrames #wallDirection div span {
+              display: inline-block;
+              width: 30%;
+              height: 100%; }
+            #mainContent #content section #wallFrames #wallDirection div:first-child {
+              text-align: left; }
+            #mainContent #content section #wallFrames #wallDirection div:last-child {
+              text-align: right; }
+
+@media (max-width: 992px) {
+  #mainContent #content section #prodIntro {
+    display: block;
+    text-align: center; }
+    #mainContent #content section #prodIntro > div {
+      width: auto; }
+      #mainContent #content section #prodIntro > div .text {
+        padding-bottom: 10% !important; }
+      #mainContent #content section #prodIntro > div:last-child {
+        margin: 0 auto; }
+  #mainContent #content section #prod {
+    display: block;
+    padding: 50px 0; }
+    #mainContent #content section #prod > div.photo {
+      display: block;
+      width: auto;
+      margin-bottom: 50px;
+      padding: 0; }
+      #mainContent #content section #prod > div.photo img {
+        margin: 0 auto; }
+      #mainContent #content section #prod > div.photo .text {
+        display: block;
+        max-width: 625px;
+        margin: 0 auto; }
+    #mainContent #content section #prod > div.text {
+      display: none; }
+  #mainContent #content section #designServ #fb5-ajax #fb5 {
+    margin-bottom: 34px; }
+  #mainContent #content section #frames {
+    display: block; }
+    #mainContent #content section #frames > div {
+      display: block;
+      width: auto; }
+      #mainContent #content section #frames > div:first-child {
+        padding: 0 0 40px 0; }
+  #mainContent #content section #wallFrames {
+    margin-top: 120px; }
+    #mainContent #content section #wallFrames #wall {
+      width: 1944px;
+      margin-bottom: 34px;
+      font-size: 65%; }
+      #mainContent #content section #wallFrames #wall .portLrg {
+        max-width: 180px; }
+      #mainContent #content section #wallFrames #wall .landLrg {
+        max-width: 210px; }
+      #mainContent #content section #wallFrames #wall .portSm {
+        max-width: 118px; }
+      #mainContent #content section #wallFrames #wall .landSm {
+        max-width: 139px; }
+  #mainContent #content section #prints #photoPrints {
+    position: relative; }
+    #mainContent #content section #prints #photoPrints .photo {
+      position: absolute; }
+      #mainContent #content section #prints #photoPrints .photo img {
+        padding: 10px; }
+      #mainContent #content section #prints #photoPrints .photo:nth-child(1) {
+        top: -590px;
+        left: 40%;
+        right: -80px; }
+      #mainContent #content section #prints #photoPrints .photo:nth-child(2) {
+        top: 10px;
+        left: 80%;
+        right: -200px; }
+      #mainContent #content section #prints #photoPrints .photo:nth-child(3) {
+        top: 80px;
+        right: 32%; }
+      #mainContent #content section #prints #photoPrints .photo:nth-child(4) {
+        top: -450px;
+        right: 76%; }
+      #mainContent #content section #prints #photoPrints .photo:nth-child(5) {
+        top: -520px; }
+      #mainContent #content section #prints #photoPrints .photo:nth-child(6) {
+        top: 10px;
+        right: 68%;
+        left: -220px; }
+  #mainContent #content section #archivalPrints {
+    /*
+    					#archPrints {
+    						margin: 50px 0;
+    						.photo {
+    							img {
+    								padding: 15px;
+    							}
+    						}
+    					}
+    */ }
+  #mainContent #content section #labPrints {
+    padding: 70px 0 10px; } }
+@media (max-width: 640px) {
+  #mainContent #content {
+    /*
+    			&.albums {
+    				.prod {
+    					display: block;
+    					.flexslider {
+    						width: 100%;
+    						margin: 0 !important;
+    						+ div {
+    							display: none;
+    						}
+    					}
+    					> div:last-child {
+    						width: auto !important;
+    						padding-left: 20px;
+    						p {
+    							max-width: none;
+    						}
+    					}
+    					&:nth-child(2n+1) {
+    						> div:last-child {
+    							padding-left: 0;
+    							padding-right: 20px;
+    						}
+    					}
+    				}
+    			}
+    */ }
+    #mainContent #content #backToProd {
+      left: 20px; }
+    #mainContent #content #albums p {
+      padding-left: 20px;
+      padding-right: 20px; }
+    #mainContent #content #design {
+      padding: 75px 20px; }
+    #mainContent #content .serv {
+      display: block;
+      padding-bottom: 95px; }
+      #mainContent #content .serv div {
+        width: auto !important;
+        display: block; }
+        #mainContent #content .serv div:last-child {
+          padding-left: 20px; }
+        #mainContent #content .serv div p {
+          max-width: none; }
+      #mainContent #content .serv:nth-child(2n+1) div:last-child {
+        padding-left: 0;
+        padding-right: 20px; }
+    #mainContent #content section #prints {
+      padding-bottom: 300px; }
+    #mainContent #content section #archivalPrints {
+      margin: 60px 0; }
+    #mainContent #content section #frames {
+      padding-top: 0; }
+    #mainContent #content section #wallFrames {
+      margin-top: 80px; }
+      #mainContent #content section #wallFrames #wall {
+        margin-bottom: 0; } }
+@media (max-width: 540px) {
+  #mainContent #content section #archivalPrints #archPrints .photo img {
+    padding: 10px; } }
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  #mainContent header #logo {
+    /* Reference the @2x Sprite */
+    background-image: url(/_images/logo_smaller@2x.png);
+    /* Translate the @2x sprite's dimensions back to 1x */
+    background-size: 95px 58px; } }
